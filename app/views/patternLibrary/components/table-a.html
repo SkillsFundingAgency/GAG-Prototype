@@ -1,0 +1,171 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Calculations pattern</h1>
+
+<h3 class="govuk-heading-m">Pattern 1</h3>
+<p> Pattern 1 is in reference to rate x weighting x pupil number = funding</p>
+
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Rate
+    </dt>
+    <dd class="govuk-summary-list__value">
+      £2,783.35
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Weighting
+    </dt>
+    <dd class="govuk-summary-list__value">
+      1.000000
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Pupils
+    </dt>
+    <dd class="govuk-summary-list__value">
+      194
+    </dd>
+  </div>
+
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Total
+    </dt>
+    <dd class="govuk-summary-list__value">
+      £539,970.46
+    </dd>
+  </div>
+</dl>
+
+<h3 class="govuk-heading-m">Pattern 2</h3>
+<p> Pattern 2 is in reference to rate x weighting = funding</p>
+
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Rate
+      </dt>
+      <dd class="govuk-summary-list__value">
+        £110,000.00
+      </dd>
+    </div>
+  
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Weighting
+      </dt>
+      <dd class="govuk-summary-list__value">
+        0.000000
+      </dd>
+    </div>
+    
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Total
+      </dt>
+      <dd class="govuk-summary-list__value">
+        £539,970.46
+      </dd>
+    </div>
+  </dl>
+
+<h3 class="govuk-heading-m">Pattern 3</h3>
+<p> Pattern 3 is in reference to percentage value x funding = value of % in £ (SEN example)</p>
+
+<dl class="govuk-summary-list govuk-summary-list--no-border">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Rate
+      </dt>
+      <dd class="govuk-summary-list__value">
+        £2,783.35
+      </dd>
+    </div>
+  
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Weighting
+      </dt>
+      <dd class="govuk-summary-list__value">
+        1.000000
+      </dd>
+    </div>
+  
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key">
+        Pupils
+      </dt>
+      <dd class="govuk-summary-list__value">
+        194
+      </dd>
+    </div>
+
+    <div class="govuk-summary-list__row ">
+        <dt class="govuk-summary-list__key">
+          SEN %
+        </dt>
+        <dd class="govuk-summary-list__value">
+          4.00
+        </dd>
+      </div>
+
+    <div class="govuk-summary-list__row ">
+      <dt class="govuk-summary-list__key">
+        Total
+      </dt>
+      <dd class="govuk-summary-list__value">
+        <b>£539,970.46</b>
+      </dd>
+    </div>
+
+    <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+         <i>of which, notional SEN funding</i>
+        </dt>
+        <dd class="govuk-summary-list__value">
+        <i>£21,598.82</i>
+        </dd>
+      </div>
+
+  </dl>
+
+
+  <!-- Code block -->
+  <h3 class="govuk-heading-m">Code block</h3>
+  <pre>
+      &lt;dl class=&quot;govuk-summary-list govuk-summary-list--no-border&quot;&gt;
+      &lt;div class=&quot;govuk-summary-list__row&quot;&gt;
+        &lt;dt class=&quot;govuk-summary-list__key&quot;&gt;
+          Rate
+        &lt;/dt&gt;
+        &lt;dd class=&quot;govuk-summary-list__value&quot;&gt;
+          £2,783.35
+        &lt;/dd&gt;
+      &lt;/div&gt;
+  </pre>
+  <!-- End Code Block -->
+
+  <h2 class="govuk-heading-m govuk-!-margin-top-9 govuk-!-margin-bottom-9">When to use this component</h2>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-9">When not to use this component</h2>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-9">Research on this component</h2>
+
+
+{% endblock %}

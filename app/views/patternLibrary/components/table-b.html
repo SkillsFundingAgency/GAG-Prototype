@@ -1,0 +1,140 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+    .table-highlight {
+      background-color: #eee;
+    }
+  </style>
+
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Table B and C</h1>
+
+
+<table class="govuk-table">
+        <h3 class="govuk-heading-m">Academic year 2018 to 2019 information</h3>
+        <caption class="govuk-table__caption">Calculation of baseline for academic year 2018 to 2019</caption>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row table-highlight">
+            <th scope="row" class="govuk-table__header govuk-!-width-one-half">1. Full year pre-16 academic year 2018 to 2019 school budget share</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter">£7,798,806.87</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-width-one-quarter"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">2. Lump sum (including fringe) in LA’s funding formula for academic year</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£110,000.00</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">3. Academic year 2019 to 2020 sparsity value (including taper)</th>
+            <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+            <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          </tr>
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">4. Approved MFG exclusions for academic year 2018 to 2019</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+            </tr>
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">5. Technical adjustments to academic year 2018 to 2019 baseline</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+          </tr>
+          <tr class="govuk-table__row table-highlight">
+              <th scope="row" class="govuk-table__header">6. Adjusted pre-16 academic year 2018 to 2019 school budget share</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£7,688,806.87</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">= 1 - 2 - 3 - 4 - 5</td> 
+          </tr>
+          <tr class="govuk-table__row table-highlight">
+              <th scope="row" class="govuk-table__header">7. Academic year 2018 to 2019 pupil NOR</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£7,688,806.87</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">= 1 - 2 - 3 - 4 - 5</td> 
+          </tr>
+          <tr class="govuk-table__row table-highlight">
+              <th scope="row" class="govuk-table__header">8. Academic year 2018 to 2019 MFG unit value</th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£6,049.42</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">6 / 7</td> 
+          </tr>
+          <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">9. Minimum value per pupil </th>
+              <td class="govuk-table__cell govuk-table__cell--numeric">£6,079.66</td>
+              <td class="govuk-table__cell govuk-table__cell--numeric">=8x(1+21)</td> 
+          </tr>
+        </tbody>
+      </table>
+
+        <!-- Code block -->
+  <h3 class="govuk-heading-m">Code block</h3>
+
+  <pre>
+        &lt;table class=&quot;govuk-table&quot;&gt;
+        &lt;h3 class=&quot;govuk-heading-m&quot;&gt;Academic year 2018 to 2019 information&lt;/h3&gt;
+        &lt;caption class=&quot;govuk-table__caption&quot;&gt;Calculation of baseline for academic year 2018 to 2019&lt;/caption&gt;
+        &lt;tbody class=&quot;govuk-table__body&quot;&gt;
+          &lt;tr class=&quot;govuk-table__row table-highlight&quot;&gt;
+            &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;1. Full year pre-16 academic year 2018 to 2019 school budget share&lt;/th&gt;
+            &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;7,798,806.87&lt;/td&gt;
+            &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row&quot;&gt;
+            &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;2. Lump sum (including fringe) in LA&rsquo;s funding formula for academic year&lt;/th&gt;
+            &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;110,000.00&lt;/td&gt;
+            &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row&quot;&gt;
+            &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;3. Academic year 2019 to 2020 sparsity value (including taper)&lt;/th&gt;
+            &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;0.00&lt;/td&gt;
+            &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row&quot;&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;4. Approved MFG exclusions for academic year 2018 to 2019&lt;/th&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;0.00&lt;/td&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row&quot;&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;5. Technical adjustments to academic year 2018 to 2019 baseline&lt;/th&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;0.00&lt;/td&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row table-highlight&quot;&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;6. Adjusted pre-16 academic year 2018 to 2019 school budget share&lt;/th&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;7,688,806.87&lt;/td&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;= 1 - 2 - 3 - 4 - 5&lt;/td&gt; 
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row table-highlight&quot;&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;7. Academic year 2018 to 2019 pupil NOR&lt;/th&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;7,688,806.87&lt;/td&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;= 1 - 2 - 3 - 4 - 5&lt;/td&gt; 
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row table-highlight&quot;&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;8. Academic year 2018 to 2019 MFG unit value&lt;/th&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;6,049.42&lt;/td&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;6 / 7&lt;/td&gt; 
+          &lt;/tr&gt;
+          &lt;tr class=&quot;govuk-table__row&quot;&gt;
+              &lt;th scope=&quot;row&quot; class=&quot;govuk-table__header&quot;&gt;9. Minimum value per pupil &lt;/th&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;&pound;6,079.66&lt;/td&gt;
+              &lt;td class=&quot;govuk-table__cell govuk-table__cell--numeric&quot;&gt;=8x(1+21)&lt;/td&gt; 
+          &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+  </pre>
+  
+  
+    <!-- End Code Block -->
+
+      <h2 class="govuk-heading-m govuk-!-margin-top-9 govuk-!-margin-bottom-9">When to use this component</h2>
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-9">When not to use this component</h2>
+    
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-9">Research on this component</h2>
+    
+    
+{% endblock %}

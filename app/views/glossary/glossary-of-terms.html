@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <a class="govuk-back-link govuk-!-margin-bottom-9" href="javascript:history.back()">Back</a>
+        <h2 class="govuk-heading-l govuk-!-margin-bottom-9">Glossary of funding terms</h2>
+        <p class="govuk-!-margin-bottom-6">Education funding information has some terms that public users might not be familiar with, so we've provided a glossary.</p>
+
+        <table class="govuk-table govuk-!-margin-bottom-9">
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Term</th>
+                    <th scope="col" class="govuk-table__header govuk-!-width-three-quarters">Definition</th>
+                </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Allocation</td>
+                    <td class="govuk-table__cell">An amount of Education and Skills Funding Agency (<abbr title="Education and Skills Funding Agency">ESFA</abbr>) funding for a learning provider calculated by using a funding formula. Allocations can change throughout the year if pupil numbers change.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Breakdown</td>
+                    <td class="govuk-table__cell">The individual funding elements that make up a total allocation.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Block/funding block</td>
+                    <td class="govuk-table__cell">Funding is divided into blocks to fund different things – for example, building maintenance and pupils with special needs.</td>
+                </tr>
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell">Recoupment</td>
+                    <td class="govuk-table__cell">Adjustments to an allocation due to a learning provider moving over to being an academy and therefore being funded directly instead of from <abbr title="Education and Skills Funding Agency">ESFA</abbr>.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

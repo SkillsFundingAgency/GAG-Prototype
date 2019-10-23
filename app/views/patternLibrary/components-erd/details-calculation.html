@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      How is this calculated
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-quarter">
+                <span class="govuk-caption-m">£2,783.35</span>
+                <h3 class="govuk-heading-m">Rate</h3>
+            </div>
+            <div class="govuk-grid-column-one-quarter">
+                <span class="govuk-caption-m">1.000000</span>
+                <h3 class="govuk-heading-m">Weighting</h3>
+            </div>
+            <div class="govuk-grid-column-one-quarter">
+                <span class="govuk-caption-m">194</span>
+                <h3 class="govuk-heading-m">Pupils</h3>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</details>
+
+{% endblock %}

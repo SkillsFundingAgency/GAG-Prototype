@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Funding line accordion</h1>
+
+  <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+    <div class="govuk-accordion__section ">
+      <div class="govuk-accordion__section-header">
+        <h2 class="govuk-accordion__section-heading">
+          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+              Basic entitlement age weighted pupil unit (AWPU)
+          </span>
+        </h2>
+      </div>
+      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  <a class="govuk-link" href="">FundingLines: name</a>
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  FundingLines: value
+                </dd>
+              </div>
+            
+            <span class="govuk-caption-m">Total</span>
+            <h3 class="govuk-heading-m govuk-!-margin-bottom-4 ">£3,019,911.38</h3>
+
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

@@ -1,0 +1,43 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+        <a href="../index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+        <h1 class="govuk-heading-xl">Pattern library</h1>
+      
+        <main class="govuk-main-wrapper">
+           
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-one-third">
+                    <h3 class="govuk-heading-m">Navigation</h3>
+                    <ul class="govuk-list">
+                            <li>
+                              <a class="govuk-link" href="/patternLibrary/components/index.html">Components</a>
+                            </li>
+                            <li>
+                              <a class="govuk-link" href="components-erd/index.html">Components mapped to ERD</a>
+                            </li>
+                            <li>
+                              <a class="govuk-link" href="/patternLibrary/page-layouts/index.html">Page layouts</a>
+                            </li>
+                          </ul>
+                </div> 
+
+                    <div class="govuk-grid-column-two-thirds">
+                      <h2 class="govuk-heading-l">Pattern library</h2>
+                      <p class="govuk-body-l">Design pattern library for GAG alpha. </p>
+                      <p class="govuk-body">Latest version is v1.0</p>
+                    </div>
+                </div>
+          </div>
+      
+        </main>
+      </div>
+
+{% endblock %}

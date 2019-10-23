@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+
+</script>
+
+<a href="dashboard.html" class="govuk-back-link govuk-!-margin-top-9">Back</a>
+
+<div class="govuk-width-container">
+  
+    <div class="govuk-main-wrapper">
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Academy name</h1>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+                <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+                    <div class="govuk-accordion__section ">
+                      <div class="govuk-accordion__section-header">
+                        <h2 class="govuk-accordion__section-heading">
+                          <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                            General annnual grant 2019 - 2020
+                          </span>
+                        </h2>
+                        <p class="govuk-body">Academy name</p> 
+                        <p class="govuk-body">Published: March 12th 2019 <strong class="govuk-tag red-background"> Latest </strong></p>
+                        <span class="govuk-caption-l">Total allocation</span>
+                        <h4 class="govuk-heading-s">£9,254,351.66</h4>
+                      </div>
+            
+                      <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                          <h2 class="govuk-!-margin-bottom-9"><a href="allocation-change">View changes to your allocation</a></h2>
+                          <h3 class="govuk-heading-m govuk-!-margin-bottom-4">Funding breakdown 2019 - 2020</h3>
+                            <dl class="govuk-summary-list govuk-summary-list--no-border">
+                                    <div class="govuk-summary-list__row">
+                                      <dt class="govuk-summary-list__key">
+                                        <a href="allocation-detail.html#schoolAllocation">School Allocation</a>
+                                      </dt>
+                                      <dd class="govuk-summary-list__value">
+                                        £8,183,791.66
+                                      </dd>
+                                    </div>
+                                    <div class="govuk-summary-list__row hide">
+                                      <dt class="govuk-summary-list__key">
+                                        <a href="allocation-detail.html#highNeedsAllocation">High needs allocation</a>
+                                      </dt>
+                                      <dd class="govuk-summary-list__value">
+                                        £0.00
+                                      </dd>
+                                    </div>
+                                    <div class="govuk-summary-list__row">
+                                      <dt class="govuk-summary-list__key">
+                                        <a href="allocation-detail.html#16-19Allocation">16 - 19 Allocation</a>
+                                      </dt>
+                                      <dd class="govuk-summary-list__value">
+                                        £1,070,560.00
+                                      </dd>
+                                    </div>
+                                  </dl>
+                                  <span class="govuk-caption-l">Total allocation</span>
+                                  <h3 class="govuk-heading-m govuk-!-margin-bottom-9">£9,254,351.66</h3>
+                                  <div class="download-document-image">
+                                    <h3 class="govuk-header-m govuk-!-margin-bottom-2"><a href="/public/images/gag-statement.pdf" download="gag-allocation-19-20">Save or print the latest version of your statement</a></h2>
+                                    <p>OpenDocument Spreadsheet (ODS), 206KB This file is in an <a href="https://www.gov.uk/guidance/using-open-document-formats-odf-in-your-organisation">OpenDocument</a> format. You may need a different format if you're using assistive technology.</p>
+                                    <details class="govuk-details" data-module="govuk-details">
+                                        <summary class="govuk-details__summary">
+                                          <span class="govuk-details__summary-text">
+                                            Request an accessible format.
+                                          </span>
+                                        </summary>
+                                        <div class="govuk-details__text">
+                                            <p class="govuk-body">If you use assistive technology (such as a screen reader) and need a version of this document in a more accessible format, please email <a href="mailto:ESFA.GOVUK-ENQUIRIES@education.gov.uk."> esfa.govuk-enquiries@education.gov.uk.</a> Please tell us what format you need. It will help us if you say what assistive technology you use.</p>
+                                        </div>
+                                      </details>
+                                  </div>
+                                    <h3 class="govuk-heading-m">Allocation History</h3>
+                                    <h4><a href="allocation-history.html"> View your allocation history</a></h4>
+                                    <p>You can view all versions of this <a class="modal-link-hotfix glossaryTerm" id="glossaryTerm-allocation" href="#open-modal">allocation</a> for the financial year 2019 to 2020 and previous years on the <a class="govuk-link" href="">allocation history</a>.</p>
+                                  
+                                    <h3 class="govuk-heading-m">General annual grant resources</h3>
+                                    <p class="govuk-body">Get more general guidance on <a class="govuk-link" target="_blank" href="https://www.gov.uk/guidance/academies-general-annual-grant-allocation-guides-2019-to-2020">GAG 2019 - 2020</a>.</p>
+
+                                  
+                                    <div id="open-modal" class="modal-window">
+                                    <div>
+                                      <h3 class="govuk-heading-m">Allocation</h3>
+                                      <p class="govuk-body">	An amount of Education and Skills Funding Agency (ESFA) funding for a learning provider calculated by using a funding formula. Allocations can change throughout the year if pupil numbers change.</p>
+                                      <p><a href="http://localhost:3000/glossary/glossary-of-terms">View full glossary of terms</a></p>
+                                      <a href="#glossaryTerm-allocation" role="button" draggable="false" class="govuk-button govuk-button--start govuk-button-modal" data-module="govuk-button">
+                                          Close </a>
+                                    </div>       
+                                                              
+                      </div>
+                      </div>
+                      </div>
+            </div>
+        </div>
+  </div>
+
+{% endblock %}

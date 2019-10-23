@@ -1,0 +1,63 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Manage your education and skills funding prototype
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+
+      <p>
+        Current prototype in design during Sprint 5 (alpha v5.0.0)      
+      </p>
+
+      <h2 class="govuk-heading-m">About this page</h2>
+
+      <p>
+      The UX team are currently working to develop this version during the current working sprint (Sprint 5), as a result this version may change while viewing since it is not yet stable.
+    </p>
+
+      <h3 class="govuk-heading-m">Select a user journey from the list below. </h3>
+
+      <div class="form-group govuk-!-margin-bottom-9">
+				<ul class="govuk-list">
+          <li><h3 class="govuk-heading-m"><a href="myesf-gag-alpha/v5-0-0/service-overview">MYESF GAG alpha - MAT</a></h3></li>
+          <li><h3 class="govuk-heading-m"><a href="SAT/v3-0-0/service-overview.html">MYESF GAG alpha - SAT</a></h3></li>
+
+
+				</ul>
+      </div>
+      
+      <div class="govuk-form-group govuk-!-margin-bottom-9">
+        <h3 class="govuk-heading-m">Alpha version select - MAT</h3>
+        <select class="govuk-select" onChange="window.location.href=this.value">
+          <option>Version select</option>
+          <option value="/myesf-gag-alpha/v1-0-0/service-overview">alpha v1.0.0</option>
+          <option value="/myesf-gag-alpha/v1-0-1/service-overview">alpha v1.0.1</option>
+          <option value="/myesf-gag-alpha/v2-0-0/service-overview">alpha v2.0.0</option>
+          <option value="/myesf-gag-alpha/v2-0-1/service-overview">alpha v2.0.1</option>
+          <option value="/myesf-gag-alpha/v3-0-0/service-overview">alpha v3.0.0</option>
+          <option value="/myesf-gag-alpha/v4-0-0/service-overview">alpha v4.0.0</option>
+        </select>
+      </div>
+
+      <div class="govuk-form-group govuk-!-margin-bottom-9">
+          <h3 class="govuk-heading-m">Pattern Library</h3>
+          <a href="/patternLibrary/index.html">Latest version</a> <br>
+          <select class="govuk-select govuk-!-margin-top-4" onChange="window.location.href=this.value">
+            <option>Version select</option>
+            <option value="/patternLibrary/index.html">alpha v1.0.0</option>
+            <option value="#"></option>
+          </select>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<a href="index.html" class="govuk-back-link">Back</a>
+
+<div class="govuk-width-container">
+  
+    <main class="govuk-main-wrapper">
+
+    <span class="govuk-caption-m">Excelsior Academy</span>
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-4">UKPRN: 10023975</h3>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-9">Funding statements</h1>
+
+    
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-third">
+                <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset">
+                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            <h1 class="govuk-fieldset__heading">
+                              Filter by type
+                            </h1>
+                          </legend>
+                          <div class="govuk-checkboxes govuk-checkboxes--small">
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                              <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                                General annual grant
+                              </label>
+                            </div>
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                              <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                                PE and sport premium allocation
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="govuk-form-group">
+                            <fieldset class="govuk-fieldset">
+                              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <h1 class="govuk-fieldset__heading">
+                                  Filter by year
+                                </h1>
+                              </legend>
+                              <div class="govuk-checkboxes govuk-checkboxes--small">
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+                                  <label class="govuk-label govuk-checkboxes__label" for="organisation">
+                                    2019 - 2020
+                                  </label>
+                                </div>
+                                <div class="govuk-checkboxes__item">
+                                  <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+                                  <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+                                    2018 - 2019
+                                  </label>
+                                </div>
+                              </div>
+                            </fieldset>
+                          </div>
+            </div>
+
+            <div class="govuk-grid-column-two-thirds">
+                <table class="govuk-table">
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header"><a href="allocation-detail.html" class="govuk-link">General annnual grant 2019 - 2020</a> <strong class="govuk-tag">
+                              New
+                            </strong> </p> 
+                            <p class="govuk-!-padding-bottom-6">Published April 12th 2019</p></th>
+                            <td class="govuk-table__cell">£7,954,397.79</td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                                <th scope="row" class="govuk-table__header"><a href="allocation-detail.html" class="govuk-link">PE and sport premium allocation 2019 to 2020</a></p> 
+                                <p class="govuk-!-padding-bottom-6">Published April 12th 2019</p></th>
+                                <td class="govuk-table__cell">£7,954,397.79</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                    <th scope="row" class="govuk-table__header"><a href="allocation-detail.html" class="govuk-link">General annual grant 2018 - 2019</a> </p> 
+                                    <p class="govuk-!-padding-bottom-6">Published March 25th 2018</p></th>
+                                    <td class="govuk-table__cell">£7,954,397.79</td>
+                                  </tr>
+
+                          
+                        </tbody>
+                      </table>
+            </div>
+        </div>
+
+    </main>
+  </div>
+
+{% endblock %}

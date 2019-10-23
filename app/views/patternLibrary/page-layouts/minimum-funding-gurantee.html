@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+  .table-highlight {
+    background-color: #eee;
+  }
+</style>
+
+<div class="govuk-width-container">
+        <a href="allocation-detail.html" class="govuk-back-link">Back</a>
+
+
+  <main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row govuk-!-margin-bottom-4">
+      <div class="govuk-grid-column-full"> 
+          <span class="govuk-caption-m">Excelsior Academy</span>
+          <h4 class="govuk-heading-s govuk-!-margin-bottom-6">UKPRN: 10023975</h4>
+          <span class="govuk-caption-xl">2019 - 2020</span>
+          <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">Academic year 2019 to 2020 minimum funding guarantee</h1>
+      </div>
+    </div>
+
+                    <table class="govuk-table">
+                        <h3 class="govuk-heading-m">Academic year 2018 to 2019 information</h3>
+                        <caption class="govuk-table__caption">Calculation of baseline for academic year 2018 to 2019</caption>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row table-highlight">
+                            <th scope="row" class="govuk-table__header">1. Full year pre-16 academic year 2018 to 2019 school budget share</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">£7,798,806.87</td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                            <th scope="row" class="govuk-table__header">2. Lump sum (including fringe) in LA’s funding formula for academic year</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">£110,000.00</td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                          </tr>
+                          <tr class="govuk-table__row govuk-!-margin-bottom-9">
+                            <th scope="row" class="govuk-table__header">3. Academic year 2019 to 2020 sparsity value (including taper)</th>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                          </tr>
+                          <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">4. Approved MFG exclusions for academic year 2018 to 2019</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                            </tr>
+                          <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">5. Technical adjustments to academic year 2018 to 2019 baseline</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric"></td>
+                          </tr>
+                          <tr class="govuk-table__row table-highlight">
+                              <th scope="row" class="govuk-table__header">6. Adjusted pre-16 academic year 2018 to 2019 school budget share</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">£7,688,806.87</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">= 1 - 2 - 3 - 4 - 5</td> 
+                          </tr>
+                          <tr class="govuk-table__row table-highlight">
+                              <th scope="row" class="govuk-table__header">7. Academic year 2018 to 2019 pupil NOR</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">£7,688,806.87</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">= 1 - 2 - 3 - 4 - 5</td> 
+                          </tr>
+                          <tr class="govuk-table__row table-highlight">
+                              <th scope="row" class="govuk-table__header">8. Academic year 2018 to 2019 MFG unit value</th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">£6,049.42</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">6 / 7</td> 
+                          </tr>
+                          <tr class="govuk-table__row">
+                              <th scope="row" class="govuk-table__header">9. Minimum value per pupil </th>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">£6,079.66</td>
+                              <td class="govuk-table__cell govuk-table__cell--numeric">=8x(1+21)</td> 
+                          </tr>
+                        </tbody>
+                      </table>
+   
+            <!-- Funding not qualified for START-->
+           <!--  <details class="govuk-details" data-module="govuk-details">
+                <summary class="govuk-details__summary">
+                  <span class="govuk-details__summary-text">
+                    Funding not qualified for
+                  </span>
+                </summary>
+                <div class="govuk-details__text">
+                  <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Looked after children (LAC)</h4>
+                  <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Sparsity</h4>
+                  <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Split sites</h4>
+                  <h4 class="govuk-heading-s govuk-!-margin-bottom-2">PFI</h4>
+                  <h4 class="govuk-heading-s govuk-!-margin-bottom-2">London fringe</h4>
+                  <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Split sites</h4>
+                </div>
+              </details>     -->         
+              <!-- Funding not qualified for END-->
+
+              <ul class="govuk-list">
+                <li>
+                  <a class="govuk-link" href="#">Save or print this statement</a>
+                </li>
+                <li>
+                  <a class="govuk-link" href="#">Contact ESFA </a>
+                </li>
+                <li>
+              </ul>
+
+          </div> 
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

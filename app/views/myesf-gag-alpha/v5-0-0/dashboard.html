@@ -1,0 +1,119 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+.myesf-tiles {
+    margin-bottom: 60px;
+    background-color: black;
+    padding: 10px 20px;
+    min-height: 125px;
+    width: 31%;
+    margin: 1%;
+}
+
+.myesf-tiles:focus {
+    margin-bottom: 60px;
+    background-color: black;
+    padding: 10px 20px;
+    min-height: 125px;
+    width: 31%;
+    margin: 1%;
+    outline: 3px solid #ffbf47;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.myesf-tiles span  {
+    color: white;
+    text-decoration: none;
+}
+
+.myesf-tiles a > span {
+    color: white;
+    text-decoration: none;
+}
+
+.myesf-tiles h3 {
+    color: white;
+    text-decoration: none;
+}
+
+.DashboardInfoContainer {
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 10px solid #1d70b8;
+}
+
+a:focus {
+    background-color: #ffbf47;
+    outline: 3px solid #ffbf47;
+}
+
+</style>
+
+<h1 class="govuk-heading-xl">Manage your education and skills funding</h1>
+
+                <div class="govuk-grid-row">
+                    <ul class="govuk-list">
+                    <a class="govuk-link" href="funding-statements.html">
+                    <li>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                            <span class="govuk-caption-m">Allocation statements</span>
+                            <h3 class="govuk-heading-m">View your statements</h3>
+                    </div>
+                    </li>
+                    </a>
+                    
+                <li>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a class="govuk-link" href="">
+                            <span class="govuk-caption-m">Contracts and agreements</span>
+                            <h3 class="govuk-heading-m">View contracts</h3>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a href="">
+                            <span class="govuk-caption-m">Document exchange</span>
+                            <h3 class="govuk-heading-m">Manage your documents</h3>
+                        </a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+            <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-third myesf-tiles">
+                            <a class="govuk-link" href="">
+                                <span class="govuk-caption-m">Funding claims</span>
+                                <h3 class="govuk-heading-m">View claims and statements</h3>    
+                            </a>
+                        </div>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a href="">
+                            <span class="govuk-caption-m">Payment history</span>
+                            <h3 class="govuk-heading-m">View payments</h3>    
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a  href="">
+                            <span class="govuk-caption-m">Subcontractor declaration</span>
+                            <h3 class="govuk-heading-m">Manage your declarations</h3>    
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+{% endblock %}

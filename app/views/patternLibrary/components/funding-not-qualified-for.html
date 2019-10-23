@@ -1,0 +1,63 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Funding not qualified for</h1>
+  <p>This component to be used to show funding lines that an application has not qualified for.</p>
+  <p class="govuk-body govuk-!-margin-bottom-6">In most cases this will be when the sub-total value is equal to £0.</p>
+
+<!-- Funding not qualified for START-->
+<details class="govuk-details" data-module="govuk-details">
+    <summary class="govuk-details__summary">
+      <span class="govuk-details__summary-text">
+        Funding not qualified for
+      </span>
+    </summary>
+    <div class="govuk-details__text">
+      <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Looked after children (LAC)</h4>
+      <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Sparsity</h4>
+      <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Split sites</h4>
+      <h4 class="govuk-heading-s govuk-!-margin-bottom-2">PFI</h4>
+      <h4 class="govuk-heading-s govuk-!-margin-bottom-2">London fringe</h4>
+      <h4 class="govuk-heading-s govuk-!-margin-bottom-2">Split sites</h4>
+    </div>
+  </details>
+  <!-- Funding not qualified for END-->
+
+  <!-- Code block -->
+  <h3 class="govuk-heading-m">Code block</h3>
+
+<pre>
+    &lt;details class=&quot;govuk-details&quot; data-module=&quot;govuk-details&quot;&gt;
+    &lt;summary class=&quot;govuk-details__summary&quot;&gt;
+      &lt;span class=&quot;govuk-details__summary-text&quot;&gt;
+        Funding not qualified for
+      &lt;/span&gt;
+    &lt;/summary&gt;
+    &lt;div class=&quot;govuk-details__text&quot;&gt;
+      &lt;h4 class=&quot;govuk-heading-s govuk-!-margin-bottom-2&quot;&gt;Looked after children (LAC)&lt;/h4&gt;
+      &lt;h4 class=&quot;govuk-heading-s govuk-!-margin-bottom-2&quot;&gt;Sparsity&lt;/h4&gt;
+      &lt;h4 class=&quot;govuk-heading-s govuk-!-margin-bottom-2&quot;&gt;Split sites&lt;/h4&gt;
+      &lt;h4 class=&quot;govuk-heading-s govuk-!-margin-bottom-2&quot;&gt;PFI&lt;/h4&gt;
+      &lt;h4 class=&quot;govuk-heading-s govuk-!-margin-bottom-2&quot;&gt;London fringe&lt;/h4&gt;
+      &lt;h4 class=&quot;govuk-heading-s govuk-!-margin-bottom-2&quot;&gt;Split sites&lt;/h4&gt;
+    &lt;/div&gt;
+  &lt;/details&gt;
+</pre>>
+  <!-- End Code Block -->
+
+  <h2 class="govuk-heading-m govuk-!-margin-top-9 govuk-!-margin-bottom-9">When to use this component</h2>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-9">When not to use this component</h2>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-9">Research on this component</h2>
+
+
+{% endblock %}

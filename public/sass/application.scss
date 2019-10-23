@@ -1,0 +1,140 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-navigation";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(128, 128, 128, 0.25);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s;
+    &:target {
+      visibility: visible;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    &>div {
+      max-width: 1200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background: #ffffff;
+    }
+}
+  .modal-close {
+    position: absolute;
+  }
+
+.download-document-image {
+    display: block;
+    font-weight: 600;
+    background: url(/public/images/icon-file-download.png) no-repeat scroll 0 0;
+    min-height: 2.5em;
+    padding: 0 0 0 2.5em;
+}
+
+.filterbyContainer {
+  border: solid 1px lightgrey
+}
+
+.filterbyHeading {
+  background-color: lightgrey;
+  width: 100%;
+  padding: 6px;
+}
+
+.filterbyCheckbox {
+  margin-left: 10px;
+  overflow-y: scroll;
+  max-height: 168px;
+} ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.filterSearch {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.filterLabel {
+  font-size: 16px;
+  color: grey;
+}
+
+.filterSearchInput {
+  border-color: grey;
+}
+
+.glossaryTerm {
+  border-bottom: 1px dotted #0b0c0c;
+  text-decoration: none;
+  color: #0b0c0c !important;
+} 
+
+.red-background {
+  background-color: #B10E1E!important;
+}
+
+.govuk-button-modal {
+  margin-bottom: 0px;
+}
+
+.right-align {
+  text-align: right;
+}
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    } a:after {
+      content: "( "attr(href)" )";
+  }
+}
+
+.app-back-to-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  margin-bottom: 30px;
+} svg {
+  margin-right: 6px;
+}
+
+.govuk-footer__inline-list-item {
+ text-decoration: underline;
+}
+
+.hide { 
+  display: none; 
+}
+
+.float-right {
+  float: right;
+}

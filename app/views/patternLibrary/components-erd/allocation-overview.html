@@ -1,0 +1,32 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Allocation overview</h1>
+
+<table class="govuk-table govuk-!-margin-bottom-9">
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-6">School allocation</h3>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Funding lines</th>
+        <th scope="col" class="govuk-table__header govuk-table__header--numeric">Total</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header"><a href="" class="govuk-link">FundingLines: name</a></p>
+        <a href="#" class="govuk-link govuk-!-padding-left-9">FundingLines: name</a> 
+    </th>
+        <td class="govuk-table__cell govuk-table__cell--numeric">FundingLines: value <br> <br> FundingLines: value</td>
+
+    </tbody>
+  </table>
+
+{% endblock %}

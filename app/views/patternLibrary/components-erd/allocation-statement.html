@@ -1,0 +1,42 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Allocation statement</h1>
+
+<h3 class="govuk-heading-m">Live example</h3>
+
+<table class="govuk-table govuk-!-margin-bottom-9">
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header"><a href="" class="govuk-link">General annnual grant 2019 - 2020</a> <strong class="govuk-tag">
+          New
+        </strong> </p> 
+        <p class="govuk-!-padding-bottom-6">Published April 12th 2019</p></th>
+        <td class="govuk-table__cell">£7,954,397.79</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 class="govuk-heading-m">Component mapped to ERD</h3>
+
+    <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header"><a href="" class="govuk-link">Funding: Funding Stream Name</a> <strong class="govuk-tag">
+                  New
+                </strong> </p> 
+                <p class="govuk-!-padding-bottom-6">Funding: statusChangedDate</p></th>
+                <td class="govuk-table__cell">funding value: total value</td>
+              </tr>
+            </tbody>
+          </table>
+
+{% endblock %}

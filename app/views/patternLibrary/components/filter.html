@@ -1,0 +1,77 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="index.html" class="govuk-back-link govuk-!-margin-bottom-9">Back</a>
+
+<span class="govuk-caption-xl">Component</span>
+<h1 class="govuk-heading-xl">Filters</h1>
+
+
+<div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h1 class="govuk-fieldset__heading">
+          Filter by type
+        </h1>
+      </legend>
+      <div class="govuk-checkboxes govuk-checkboxes--small">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation">
+            General annual grant
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+          <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+            PE and sport premium allocation
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+
+  <!-- Code block -->
+  <h3 class="govuk-heading-m">Code block</h3>
+  <pre>
+    &lt;div class=&quot;govuk-form-group&quot;&gt;
+      &lt;fieldset class=&quot;govuk-fieldset&quot;&gt;
+        &lt;legend class=&quot;govuk-fieldset__legend govuk-fieldset__legend--m&quot;&gt;
+          &lt;h1 class=&quot;govuk-fieldset__heading&quot;&gt;
+            Filter by type
+          &lt;/h1&gt;
+        &lt;/legend&gt;
+        &lt;div class=&quot;govuk-checkboxes govuk-checkboxes--small&quot;&gt;
+          &lt;div class=&quot;govuk-checkboxes__item&quot;&gt;
+            &lt;input class=&quot;govuk-checkboxes__input&quot; id=&quot;organisation&quot; name=&quot;organisation&quot; type=&quot;checkbox&quot; value=&quot;hmrc&quot;&gt;
+            &lt;label class=&quot;govuk-label govuk-checkboxes__label&quot; for=&quot;organisation&quot;&gt;
+              General annual grant
+            &lt;/label&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;govuk-checkboxes__item&quot;&gt;
+            &lt;input class=&quot;govuk-checkboxes__input&quot; id=&quot;organisation-2&quot; name=&quot;organisation&quot; type=&quot;checkbox&quot; value=&quot;employment-tribunal&quot;&gt;
+            &lt;label class=&quot;govuk-label govuk-checkboxes__label&quot; for=&quot;organisation-2&quot;&gt;
+              PE and sport premium allocation
+            &lt;/label&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+    &lt;/div&gt;
+  </pre>
+
+  <!-- End Code Block -->
+
+  <h2 class="govuk-heading-m govuk-!-margin-top-9 govuk-!-margin-bottom-9">When to use this component</h2>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-9">When not to use this component</h2>
+
+  <h2 class="govuk-heading-m govuk-!-margin-bottom-9">Research on this component</h2>
+
+
+{% endblock %}

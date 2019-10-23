@@ -1,0 +1,166 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<style>
+
+.myesf-tiles {
+    margin-bottom: 60px;
+    background-color: black;
+    padding: 10px 20px;
+    min-height: 125px;
+    width: 31%;
+    margin: 1%;
+}
+
+.myesf-tiles:focus {
+    margin-bottom: 60px;
+    background-color: black;
+    padding: 10px 20px;
+    min-height: 125px;
+    width: 31%;
+    margin: 1%;
+    outline: 3px solid #ffbf47;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.myesf-tiles span  {
+    color: white;
+    text-decoration: none;
+}
+
+.myesf-tiles a > span {
+    color: white;
+    text-decoration: none;
+}
+
+.myesf-tiles h3 {
+    color: white;
+    text-decoration: none;
+}
+
+.DashboardInfoContainer {
+    position: relative;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 10px solid #1d70b8;
+}
+
+a:focus {
+    background-color: #ffbf47;
+    outline: 3px solid #ffbf47;
+}
+
+</style>
+
+<h1 class="govuk-heading-xl">Manage your education and skills funding</h1>
+
+                <div class="govuk-grid-row">
+                    <ul class="govuk-list">
+                    <a class="govuk-link" href="funding-statements.html">
+                    <li>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                            <span class="govuk-caption-m">Allocation statements</span>
+                            <h3 class="govuk-heading-m">View your statements</h3>
+                    </div>
+                    </li>
+                    </a>
+                    
+                <li>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a class="govuk-link" href="">
+                            <span class="govuk-caption-m">Contracts and agreements</span>
+                            <h3 class="govuk-heading-m">View contracts</h3>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a href="">
+                            <span class="govuk-caption-m">Document exchange</span>
+                            <h3 class="govuk-heading-m">Manage your documents</h3>
+                        </a>
+                    </div>
+                </li>
+                </ul>
+            </div>
+
+            <div class="govuk-grid-row">
+                        <div class="govuk-grid-column-one-third myesf-tiles">
+                            <a class="govuk-link" href="">
+                                <span class="govuk-caption-m">Funding claims</span>
+                                <h3 class="govuk-heading-m">View claims and statements</h3>    
+                            </a>
+                        </div>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a href="">
+                            <span class="govuk-caption-m">Payment history</span>
+                            <h3 class="govuk-heading-m">View payments</h3>    
+                        </a>
+                    </div>
+                    <div class="govuk-grid-column-one-third myesf-tiles">
+                        <a  href="">
+                            <span class="govuk-caption-m">Subcontractor declaration</span>
+                            <h3 class="govuk-heading-m">Manage your declarations</h3>    
+                        </a>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-row govuk-!-margin-top-9" id="supportInformation">
+                        <div class="govuk-grid-column-one-third">
+                <div class="DashboardInfoContainer"> </div>
+                    <section id="section-Goto" role="region">
+                        <h3 class="govuk-heading-m">Feedback</h3>
+                        <div class="DashBoardPart noBorder">
+                            <p class="govuk-body">This is a new service – your
+                            <a href="http://www.smartsurvey.co.uk/s/1KVA0/">feedback</a> will help us to improve it. </p>
+                        </div>
+                    </section>
+                        </div>
+
+                <div class="govuk-grid-column-one-third">
+                    <div class="DashboardInfoContainer"> </div>
+                        <section id="section-Contacts" rol="region">
+                            <h3 class="govuk-heading-m">Support</h3>
+                            <div class="DashBoardPart noBorder">
+                            <p class="govuk-body">Your provider support users:</p>
+                            <p class="govuk-body"> You have no support users allocated.</div>
+                            <p class="govuk-body">
+                            <p class="govuk-body">Service desk:
+                            <a class="govuk-link" href="mailto:servicedesk@SFA.bis.gov.uk">servicedesk@SFA.bis.gov.uk</a></p>
+                            <p class="govuk-body"> 0370 267 0001</p>
+                        </section>
+                </div>
+
+                <div class="govuk-grid-column-one-third ">
+                    <div class="DashboardInfoContainer"> </div>
+                        <section id="section-Updates" role="region">
+                            <h3 class="govuk-heading-m">News and information</h3>
+                                <div class="DashBoardPart noBorder">
+                                    <div>
+                                        <p class="govuk-body">Sign up for updates from:</p>
+                                        <p class="govuk-body">
+                                            <span class="bold-small"><a href="https://www.gov.uk/government/collections/skills-funding-agency-update" rel="external" target="_blank" title="This will open in a new window">Update</a></span>: Business-critical information for providers.
+                                        </p>
+                                        <p class="govuk-body">
+                                            <span class="bold-small"><a href="http://feconnect.sfa.bis.gov.uk/" rel="external" target="_blank" title="This will open in a new window">FE Connect</a></span>: Discussion forum for providers.
+                                        </p>
+                                        <p class="govuk-body">
+                                            <span class="bold-small">ESFA GOV.UK page alerts</span>: Page alerts by <a href="https://www.gov.uk/government/email-signup/new?email_signup%5Bfeed%5D=https%3A%2F%2Fwww.gov.uk%2Fgovernment%2Forganisations%2Fskills-funding-agency.atom" rel="external" target="_blank" title="This will open in a new window">Email</a> or <a href="https://www.gov.uk/government/organisations/skills-funding-agency.atom" rel="external" target="_blank" title="This will open in a new window">Feed</a>.
+                                        </p>
+                                    </div>
+                                </div>
+                        </section>
+                </div>
+            </div>
+
+
+{% endblock %}

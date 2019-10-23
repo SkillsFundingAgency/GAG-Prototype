@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">  
+    <main class="govuk-main-wrapper">
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+            <form method="post" class="form">
+    
+                <h1 class="govuk-heading-xl">Manage your education and skills funding</h1>
+        
+                <div class="form-block">
+                    <p>Use this service to:</p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>sign documents</li>
+                        <li>view your funding allocations</li>
+                        <li>see the funding you’ve received</li>
+                        <li>manage apprenticeship details</li>
+                        <li>tell us about your subcontractors</li>
+                    </ul>
+                </div>
+        
+                <a href="sign.html" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+                    Sign in or create a new account
+                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" role="presentation" focusable="false">
+                      <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                    </svg>
+                  </a>
+                
+                <div class="form-group">
+                    <h2 class="govuk-heading-m">Before you start</h2>
+                    <p>You need to have a government, <a href="#">identity and access management system (<abbr title="Identity Management Services System">IDAMS</abbr>)</a> account to use the service.</p>
+                </div>
+            
+                <div class="form-group">
+                    <h3 class="govuk-heading-m">Contact</h3>
+                    <p>If you need help you can <a href="https://form.education.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-f9f4f5a1-936f-448b-bbeb-9dcdd595f468/AF-Stage-8aa41278-3cdd-45a3-ad87-80cbffb8b992/definition.json&amp;redirectlink=%2Fen&amp;cancelRedirectLink=%2Fen&amp;consentMessage=yes">submit an enquiry</a>.</p>
+                </div>
+        
+            </form> 
+        
+            <div class="panel panel-border-wide">
+                <a href="https://www.gov.uk/performance/sign-sfa-contracts?new" rel="external" target="_blank">Find out how this service is performing (opens in a new tab)</a>
+            </div>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            <div class="related-container">
+    
+                <aside class="related" id="related">
+            
+                    <div class="inner group related-subsection">
+                        <h2 class="govuk-heading-m" id="parent-subsection">Resources</h2>
+        
+                        <nav role="navigation" aria-labelledby="parent-subsection">
+                                                    
+                            <ul class="govuk-list govuk-list--bullet">
+                                <li class="related-links"><a href="#" title="How to become an approved training provider and bid for funding">How to become an approved training provider and bid for funding</a></li>
+                                <li class="related-links"><a href="#" title="The Hub">The Hub</a></li>
+                                <li class="related-links"><a href="/beta/v103-0-0/roles-permissions" title="User roles and permissions">User roles and permissions</a></li>
+                            </ul>
+        
+                        </nav>
+        
+                    </div>
+        
+                </aside>
+        
+            </div>
+        
+          </div>
+        </div>
+
+      </div>
+  
+    </main>
+  </div>
+            
+   
+
+</div>
+
+{% endblock %}
